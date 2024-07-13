@@ -1,0 +1,106 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(-45deg, #FFE9D0, rgb(255, 254, 211),rgb(187, 233, 255), #B1AFFF);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    margin: 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.stopwatch {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 5px solid #000000;
+    animation: borderAnimation 5s linear infinite;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #FFE9D0;
+    }
+    25% {
+        border-color: rgb(255, 254, 211);
+    }
+    50% {
+        border-color: rgb(177, 175, 255);
+    }
+    75% {
+        border-color: #BBE9FF;
+    }
+    100% {
+        border-color: rgb(177, 175, 255);
+    }
+}
+
+#display {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+.stopwatch p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: small;
+}
+
+.controls button {
+    font-size: 1em;
+    padding: 10px 20px;#tagline {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 5px;
+}
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startStopBtn {
+    background-color:#BBE9FF;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#resetBtn {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#lapBtn {
+    background-color: #BBE9FF;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#laps {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#laps li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
